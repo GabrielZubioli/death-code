@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Death Code</title>
+  </head>
+  <body>
+    <div class="flipbook">
+      <div class="hard cover">
+        <p class="title-book">Death Code</p>
+        <small></small>
+      </div>
+      <div class="hard"></div>
+
+      <div class="page">
+        <img src="images/fundo-page.png" alt="" class="reg" />
+      </div>
+
+      <div class="page">
+        <img src="images/fundo-page.png" alt="" class="reg" />
+      </div>
+
+      <div class="page">
+        <img src="images/fundo-page.png" alt="" class="reg" />
+      </div>
+
+      <div class="page">
+        <img src="images/fundo-page.png" alt="" class="reg" />
+      </div>
+
+      <div class="hard"></div>
+      <div class="hard cover">
+        O fim... ou o início?<small>~ Death Code</small>
+      </div>
+    </div>
+
+    <script src="jquery.js"></script>
+    <script src="turn.js"></script>
+    <script>
+      $(".flipbook").turn({
+        width: 1000,
+        height: 700,
+        elevation: 50,
+        gradients: true,
+        duration: 1800,
+      });
+    </script>
+  </body>
+</html>
