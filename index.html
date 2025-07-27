@@ -7,37 +7,69 @@
     <title>Death Code</title>
   </head>
   <body>
-    <div class="flipbook">
-      <div class="hard cover">
-        <p class="title-book">Death Code</p>
-        <small></small>
-      </div>
-      <div class="hard"></div>
-
-      <div class="page">
-        <img src="images/fundo-page.png" alt="" class="reg" />
-      </div>
-
-      <div class="page">
-        <img src="images/fundo-page.png" alt="" class="reg" />
+    <div class="container">
+      <div class="audio-controls">
+        <p id="musicTitle" style="color: rgb(0, 0, 0); text-align: center">
+          light_b.mp3
+        </p>
+        <div class="audio-button">
+          <button id="prevTrackBtn">⏮</button>
+          <button id="playPauseBtn">▶</button>
+          <button id="nextTrackBtn">⏭</button>
+        </div>
       </div>
 
-      <div class="page">
-        <img src="images/fundo-page.png" alt="" class="reg" />
-      </div>
+      <audio id="bgMusic" preload="auto"></audio>
 
-      <div class="page">
-        <img src="images/fundo-page.png" alt="" class="reg" />
-      </div>
+      <div class="flipbook" id="flipbook">
+        <div class="hard cover">
+          <p class="title-book">Death Code</p>
+          <small></small>
+        </div>
+        <div class="hard"></div>
 
-      <div class="hard"></div>
-      <div class="hard cover">
-        O fim... ou o início?<small>~ Death Code</small>
+        <div class="page">
+          <img src="images/page1.png" alt="" class="reg" />
+        </div>
+
+        <div class="page">
+          <img src="images/page2.png" alt="" class="reg" />
+        </div>
+
+        <div class="page">
+          <img src="images/page3.png" alt="" class="reg" />
+        </div>
+
+        <div class="page">
+          <img src="images/page4.png" alt="" class="reg" />
+        </div>
+
+        <div class="page">
+          <img src="images/fundo-page.png" alt="" class="reg" />
+        </div>
+
+        <div class="page">
+          <img src="images/fundo-page.png" alt="" class="reg" />
+        </div>
+
+        <div class="page">
+          <img src="images/fundo-page.png" alt="" class="reg" />
+        </div>
+
+        <div class="page">
+          <img src="images/fundo-page.png" alt="" class="reg" />
+        </div>
+
+        <div class="hard"></div>
+        <div class="hard cover">
+          O fim... ou o início?<small>~ Death Code</small>
+        </div>
       </div>
     </div>
 
     <script src="jquery.js"></script>
     <script src="turn.js"></script>
+    <script src="script.js"></script>
     <script>
       $(".flipbook").turn({
         width: 1000,
