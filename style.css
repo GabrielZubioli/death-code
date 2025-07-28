@@ -26,6 +26,10 @@ body {
 .container {
   width: 1000px;
   height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
 }
 
 .flipbook .hard {
@@ -71,20 +75,29 @@ body {
   margin-bottom: 10px;
 }
 
-.audio-controls {
+.music {
+  margin-top: 5rem;
+  width: 274px;
+  height: 384px;
+  background-image: url("images/bloco-notas.png");
+  background-size: cover;
   position: fixed;
-  top: 43%;
-  left: 20%;
-  transform: translateY(-50%);
-  z-index: 10;
+  left: 18%;
+  z-index: 2;
   display: flex;
   flex-direction: column;
-  transform: skew(6deg, -1deg);
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .container .audio-button {
   display: flex;
   gap: 10px;
+}
+
+.audio-controls{
+ margin-top: 85px;
+   transform: skew(3deg, -1deg);
 }
 
 .audio-button button {
@@ -94,7 +107,7 @@ body {
   margin-left: 15px;
   margin-right: 15px;
   cursor: pointer;
-  font-size: 25px;
+  font-size: 22px;
 }
 
 #musicTitle {

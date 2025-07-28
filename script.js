@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   bgMusic.src = musicList[currentTrack];
-  bgMusic.volume = 0.4;
+  bgMusic.volume = 0.1;
   updateMusicTitle();
 
   playPauseBtn.addEventListener("click", () => {
@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  const audioControls = document.querySelector(".audio-controls");
+  const audioControls = document.querySelector(".music");
   const flipbook = document.getElementById("flipbook");
 
   flipbook.addEventListener("mousedown", () => {
